@@ -7,7 +7,8 @@
     "start": "npm run generate:assets && webpack serve --open",
     "generate:assets": "ts-node src/utilits/generateAssetsJson.ts",
     "build": "npm run generate:assets && webpack --mode production",
-    "load:httpServer": "http-server ./dist"
+    "load:httpServer": "http-server ./dist",
+    "vercel-build": "npm run generate:assets && webpack --mode production && cp -r dist/* ./"
   },
   "keywords": [],
   "author": "",
