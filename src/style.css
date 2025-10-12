@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    background: #bbbbbb;
+    width: auto;
+    height: auto;
+    max-height: 90vh;
+    max-width: 90%;
+
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
