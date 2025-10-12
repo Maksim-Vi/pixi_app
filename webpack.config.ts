@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -56,6 +57,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "public/assets", to: "assets" } // копіюємо assets та assets.json
+            ],
         }),
     ],
 };
