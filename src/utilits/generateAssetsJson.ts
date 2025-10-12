@@ -47,7 +47,8 @@ function generateAssetsJson() {
     walkDir(ASSETS_DIR, ASSETS_DIR);
 
     const output = {
-        basePath: "public/assets/",
+        // basePath: "public/assets/",
+        basePath: "assets/",
         assets,
     };
 

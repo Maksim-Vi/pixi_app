@@ -1,5 +1,5 @@
 {
-  "basePath": "public/assets/",
+  "basePath": "assets/",
   "assets": [
     {
       "assetName": ".DS_Store",
