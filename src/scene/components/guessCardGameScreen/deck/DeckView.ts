@@ -13,6 +13,9 @@ export default class DeckView extends View<DeckModel> {
     private deckSprites: PIXI.Sprite[] = [];
     private text!: PIXI.Text;
 
+    private baseWidth: number = 250;
+    private baseHeight: number = 350;
+
     private _onDeckClick?: () => void;
 
     create(): void {
@@ -30,9 +33,13 @@ export default class DeckView extends View<DeckModel> {
             const sprite = new PIXI.Sprite(backTexture);
 
             sprite.anchor.set(0.5);
-            sprite.x = GameModel.centerX - 1200;
+
+            // sprite.x = GameModel.centerX - 1200;
+            sprite.x = GameModel.centerX - 500;
             sprite.y = GameModel.centerY - i * 4;
             sprite.rotation = (Math.random() - 0.5) * 0.1;
+            sprite.width = 250;
+            sprite.height = 350;
 
             this.container.addChild(sprite as any);
 
@@ -61,7 +68,7 @@ export default class DeckView extends View<DeckModel> {
 
         this.text = new PIXI.Text("init", {
             fontFamily: "Arial",
-            fontSize: 120,
+            fontSize: 40,
             fill: 0xfff,
             fontWeight: "bold",
         });

@@ -51,7 +51,7 @@ export default class MagicWordsScreenView extends View<MagicWordsScreenModel> {
 
     createButtonBack() {
         const buttonTexture = AssetsLoader.get("button_page_back");
-        this._buttonBack = new Button(buttonTexture, 250, 250);
+        this._buttonBack = new Button(buttonTexture, 100, 100);
         this.addChild(this._buttonBack as PIXI.DisplayObject);
 
         this.updateButtonBackLayout();
@@ -74,17 +74,17 @@ export default class MagicWordsScreenView extends View<MagicWordsScreenModel> {
 
             switch (avatar.position) {
                 case "left":
-                    sprite.x = GameModel.centerX - 600;
-                    sprite.y = GameModel.centerY;
+                    sprite.x = GameModel.centerX - 300;
+                    sprite.y = GameModel.centerY + 200;
                     break;
                 case "right":
-                    sprite.x = GameModel.centerX + 600;
-                    sprite.y = GameModel.centerY;
+                    sprite.x = GameModel.centerX + 300;
+                    sprite.y = GameModel.centerY + 200;
                     break;
                 case "center":
                 default:
                     sprite.x = GameModel.centerX;
-                    sprite.y = GameModel.centerY;
+                    sprite.y = GameModel.centerY + 200;
                     break;
             }
             this.addChild(sprite as PIXI.DisplayObject);
@@ -99,7 +99,7 @@ export default class MagicWordsScreenView extends View<MagicWordsScreenModel> {
         if (!texture) {
             const gfx = new PIXI.Graphics();
             gfx.beginFill(0x9999ff);
-            gfx.drawRoundedRect(0, 0, 500, 500, 20);
+            gfx.drawRoundedRect(0, 0, 400, 400, 20);
             gfx.endFill();
 
             const label = new PIXI.Text(name, {
@@ -118,7 +118,7 @@ export default class MagicWordsScreenView extends View<MagicWordsScreenModel> {
 
         const sprite = new PIXI.Sprite(texture);
         sprite.anchor.set(0.5);
-        sprite.scale.set(3);
+        sprite.scale.set(2);
         return sprite;
     }
 

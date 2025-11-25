@@ -28,7 +28,7 @@ export default class GuessCardGameScreenView extends View<GuessCardGameScreenMod
 
     createButtonBack() {
         const buttonTexture = AssetsLoader.get("button_page_back");
-        this._buttonBack = new Button(buttonTexture, 250, 250);
+        this._buttonBack = new Button(buttonTexture, 100, 100);
         this.addChild(this._buttonBack as PIXI.DisplayObject);
 
         this.updateButtonBackLayout();
@@ -37,13 +37,13 @@ export default class GuessCardGameScreenView extends View<GuessCardGameScreenMod
     private createDeckText(){
         this.text = new PIXI.Text("", {
             fontFamily: "Arial",
-            fontSize: 120,
+            fontSize: 40,
             fill: 0xfff,
             fontWeight: "bold",
         });
 
-        this.text.x = GameModel.centerX - 1000;
-        this.text.y = GameModel.centerY - 1000;
+        this.text.x = GameModel.centerX - 300;
+        this.text.y = GameModel.centerY - 400;
 
         this.addChild(this.text as PIXI.DisplayObject);
     }

@@ -28,7 +28,7 @@ export default class AceOfShadowsScreenView extends View<AceOfShadowsScreenModel
 
     createButtonBack() {
         const buttonTexture = AssetsLoader.get("button_page_back");
-        this._buttonBack = new Button(buttonTexture, 250, 250);
+        this._buttonBack = new Button(buttonTexture, 100, 100);
         this.addChild(this._buttonBack as PIXI.DisplayObject);
 
         this.updateButtonBackLayout();

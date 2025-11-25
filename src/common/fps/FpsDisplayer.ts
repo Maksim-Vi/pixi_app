@@ -8,7 +8,7 @@ export class FPSDisplayer {
     constructor() {
         this.text = new PIXI.Text('FPS: 0', {
             fontFamily: 'Arial',
-            fontSize: 80,
+            fontSize: 30,
             fill: 0xffffff,
         });
 

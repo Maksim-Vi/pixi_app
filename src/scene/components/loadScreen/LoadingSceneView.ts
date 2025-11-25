@@ -25,7 +25,7 @@ export default class LoadingSceneView extends View<LoadingSceneModel> {
     private createText() {
         this._text = new PIXI.Text("Loading 0%", {
             fontFamily: "Arial",
-            fontSize: 120,
+            fontSize: 50,
             fill: 0xffffff,
             align: "center"
         });

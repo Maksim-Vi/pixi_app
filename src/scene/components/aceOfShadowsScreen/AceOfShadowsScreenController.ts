@@ -60,7 +60,8 @@ export default class AceOfShadowsScreenController extends Controller<AceOfShadow
         const stackA_X = baseX;
         const stackA_Y = baseY;
 
-        const stackB_X = baseX - this.cardControllerList[0].view.width - 100 * 2 - 500;
+        // const stackB_X = baseX - this.cardControllerList[0].view.width - 100 * 2 - 500;
+        const stackB_X = baseX - this.cardControllerList[0].view.width - 100 * 2;
         const stackB_Y = baseY;
 
         this.stackA = [...this.cardControllerList];

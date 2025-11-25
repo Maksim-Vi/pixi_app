@@ -36,7 +36,7 @@ export default class PhoenixFlameScreenView extends View<PhoenixFlameScreenModel
 
     createButtonBack() {
         const buttonTexture = AssetsLoader.get("button_page_back");
-        this._buttonBack = new Button(buttonTexture, 250, 250);
+        this._buttonBack = new Button(buttonTexture, 100, 100);
         this.addChild(this._buttonBack as PIXI.DisplayObject);
 
         this.updateButtonBackLayout();
@@ -46,9 +46,6 @@ export default class PhoenixFlameScreenView extends View<PhoenixFlameScreenModel
         this._firePlace = new PIXI.Container();
         this._firePlace.width = 700;
         this._firePlace.height = 700;
-
-        this._firePlace.x = this._mWidth / 2;
-        this._firePlace.y = this._mHeight / 2;
 
         this.addChild(this._firePlace as PIXI.DisplayObject);
 
@@ -64,7 +61,11 @@ export default class PhoenixFlameScreenView extends View<PhoenixFlameScreenModel
         this._firePlace.addChild(background as PIXI.DisplayObject);
 
         this.createFireParticle();
-     }
+
+        this._firePlace.scale.set(0.7);
+        this._firePlace.x = GameModel.centerX - 250;
+        this._firePlace.y = GameModel.centerY;
+    }
 
     private createFireParticle(){
         this._fireEffectsContainer = new PIXI.Container();

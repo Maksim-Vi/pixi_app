@@ -67,7 +67,7 @@ export class DeckController extends Controller<DeckModel, DeckView> {
         console.log("My Card:", this._secretCardName);
 
         const deckX = GameModel.centerX - 1000;
-        const startX = deckX + 800;
+        const startX = deckX + 900;
         const spacing = 25;
         const y = GameModel.centerY;
 

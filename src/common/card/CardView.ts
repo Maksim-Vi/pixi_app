@@ -17,8 +17,8 @@ export default class CardView extends View<CardModel> {
     private offsetY: number = 0;
     private currentTween?: gsap.core.Tween | gsap.core.Timeline;
 
-    private baseWidth: number = 500 * 2;
-    private baseHeight: number = 700 * 2;
+    private baseWidth: number = 250;
+    private baseHeight: number = 350;
 
     create() {
         GlobalDispatcher.add("RESIZE_APP", this.resize, this);
@@ -45,14 +45,27 @@ export default class CardView extends View<CardModel> {
     private setCard(texture: PIXI.Texture): void {
         this.background = new PIXI.Sprite(texture);
         this.background.anchor.set(0.5);
-
         this.addChild(this.background as PIXI.DisplayObject);
 
-        this.width = this.baseWidth;
-        this.height = this.baseHeight;
+        // 1. Скидаємо будь-яке попереднє масштабування
+        this.background.scale.set(1);
+
+        // 2. Масштабуємо спрайт до логічного розміру карти
+        const texWidth = texture.width;
+        const texHeight = texture.height;
+
+        if (texWidth > 0 && texHeight > 0) {
+            const scaleX = this.baseWidth / texWidth;
+            const scaleY = this.baseHeight / texHeight;
+            // Щоб не спотворювати пропорції карти, беремо мінімальний масштаб
+            const scale = Math.min(scaleX, scaleY);
+            this.background.scale.set(scale);
+        }
+
+        // 3. Розмір усього контейнера карти тепер визначається через background
         this.scale.set(1);
 
-        this.startX = GameModel.centerX + 700;
+        this.startX = GameModel.centerX + 200;
         this.startY = GameModel.centerY;
         this.offsetX = -this._index * 2;
         this.offsetY = -this._index * 2;
@@ -70,7 +83,8 @@ export default class CardView extends View<CardModel> {
 
         this.scale.set(scaleX, scaleY);
 
-        this.startX = GameModel.centerX + 700 * scaleX;
+        // this.startX = GameModel.centerX + 700 * scaleX;
+        this.startX = GameModel.centerX + 200;
         this.startY = GameModel.centerY;
         this.setOffsetPosition();
     }

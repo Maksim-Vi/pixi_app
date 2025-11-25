@@ -79,11 +79,11 @@ export default class Game {
 
         this.container = container;
         this.app = new PIXI.Application({
-            width: this.gameSize.width,
-            height: this.gameSize.height,
+            width: Math.min(this.gameSize.width, LOGIC_WIDTH),
+            height: Math.min(this.gameSize.height, LOGIC_HEIGHT),
             autoDensity: true,
             backgroundColor: 0x0,
-            antialias: true,
+            antialias: window.innerWidth > 1080,
             autoStart: true,
         });
 
@@ -103,57 +103,26 @@ export default class Game {
     protected onResize() {
         if (!this.container || !this.app) return;
 
-        const containerWidth = this.container.clientWidth;
-        const containerHeight = this.container.clientHeight;
+        const gameContainer = document.getElementById('game-container');
+        if (!gameContainer) return;
 
-        const resolution = window.devicePixelRatio || 1;
+        const width = gameContainer.clientWidth;
+        const height = gameContainer.clientHeight;
+
+        const resolution = Math.min(window.devicePixelRatio || 1, 2);
         this.app.renderer.resolution = resolution;
-        this.app.renderer.resize(containerWidth * resolution, containerHeight * resolution);
+        this.app.renderer.resize(width, height);
 
-        const canvas = this.app.view as HTMLCanvasElement;
-        canvas.style.width = `${containerWidth}px`;
-        canvas.style.height = `${containerHeight}px`;
+        const scale = Math.min(width / LOGIC_WIDTH, height / LOGIC_HEIGHT);
 
-        this.scaleStage(this.app.stage, containerWidth / resolution, containerHeight / resolution);
+        this.app.stage.scale.set(scale);
+
+        const offsetX = (width - LOGIC_WIDTH * scale) / 2;
+        const offsetY = (height - LOGIC_HEIGHT * scale) / 2;
+        this.app.stage.position.set(offsetX, offsetY);
+
         GameModel.setParams(this.app, this.app.stage);
-
         GlobalDispatcher.dispatch("RESIZE_APP")
-    }
-
-    scaleStage(stage: Container, containerWidth: number, containerHeight: number, mode: "width" | "height" | "fill" | "fit" = "fit") {
-        // let scaleX = containerWidth / LOGIC_WIDTH;
-        // let scaleY = containerHeight / LOGIC_HEIGHT;
-        // let scale: number = Math.min(scaleX, scaleY);
-        //
-        // stage.scale.set(scale);
-
-        const scaleX = containerWidth / LOGIC_WIDTH;
-        const scaleY = containerHeight / LOGIC_HEIGHT;
-
-        let scale: number;
-        switch (mode) {
-            case "width":
-                scale = scaleX;
-                break;
-            case "height":
-                scale = scaleY;
-                break;
-            case "fill":
-                scale = Math.max(scaleX, scaleY);
-                break;
-            case "fit":
-            default:
-                scale = Math.min(scaleX, scaleY);
-                break;
-        }
-
-        stage.scale.set(scale);
-
-        const resolution = window.devicePixelRatio || 1;
-        this.app.stage.position.set(
-            (containerWidth / resolution - LOGIC_WIDTH * scale) / 2,
-            (containerHeight / resolution - LOGIC_HEIGHT * scale) / 2
-        );
     }
 
     setFps(){
@@ -171,7 +140,7 @@ export default class Game {
         uiFpsContainer.width = 500;
         uiFpsContainer.height = 500;
 
-        uiFpsContainer.x = GameModel.right - uiFpsContainer.width - 400;
+        uiFpsContainer.x = GameModel.right - uiFpsContainer.width - 200;
         uiFpsContainer.y = GameModel.top + 50;
 
         this.app.stage.addChild(uiFpsContainer as PIXI.DisplayObject);
