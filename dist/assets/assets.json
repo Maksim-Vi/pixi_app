@@ -1,0 +1,365 @@
+{
+  "basePath": "assets/",
+  "assets": [
+    {
+      "assetName": "assets",
+      "assetPath": "",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/",
+      "ext": "json"
+    },
+    {
+      "assetName": "galexy_bg",
+      "assetPath": "bg/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/bg/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Btn2",
+      "assetPath": "buttons/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/buttons/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Btn3",
+      "assetPath": "buttons/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/buttons/",
+      "ext": "png"
+    },
+    {
+      "assetName": "button_page_back",
+      "assetPath": "buttons/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/buttons/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Back_Card",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_10_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_2_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_3_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_4_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_5_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_6_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_7_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_8_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_9_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_A_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_Jack_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_King_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Clovers_Queen_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_10_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_2_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_3_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_4_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_5_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_6_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_7_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_8_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_9_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_A_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_Jack_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_King_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Hearts_Queen_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_10_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_2_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_3_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_4_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_5_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_6_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_7_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_8_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_9_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_A_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_Jack_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_King_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Pikes_Queen_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_10_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_2_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_3_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_4_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_5_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_6_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_7_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_8_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_9_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_A_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_Jack_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_King_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "Tiles_Queen_white",
+      "assetPath": "cards/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/cards/",
+      "ext": "png"
+    },
+    {
+      "assetName": "particle",
+      "assetPath": "effects/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/effects/",
+      "ext": "png"
+    },
+    {
+      "assetName": "fire_place",
+      "assetPath": "fire/",
+      "fullAssetPath": "/Users/max_home/Projects/Pixi/public/assets/fire/",
+      "ext": "png"
+    }
+  ]
+}
