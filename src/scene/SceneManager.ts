@@ -7,6 +7,7 @@ import {ScreenManagerBase} from "./components/Base/ScreenManagerBase";
 import {MagicWordsScreenManager} from "./components/magicWordsScreen/MagicWordsScreenManager";
 import {PhoenixFlameScreenManager} from "./components/phoenixFlameScreen/PhoenixFlameScreenManager";
 import {GuessCardGameScreenManager} from "./components/guessCardGameScreen/GuessCardGameScreenManager";
+import {LoadingSceneManager} from "./components/loadScreen/LoadingSceneManager";
 
 export enum SceneType {
     MainScene,
@@ -14,6 +15,7 @@ export enum SceneType {
     MagicWordsScene,
     PhoenixFlameScreen,
     GuessCardGameScreen,
+    LoadingScreen,
 }
 
 export class SceneManager {
@@ -28,6 +30,11 @@ export class SceneManager {
         this.prevScene = this.currentScene;
 
         switch (key) {
+            case SceneType.LoadingScreen:{
+                this.currentScene = this.diContainer.resolve<LoadingSceneManager>("LoadingSceneManager");
+                (this.currentScene as LoadingSceneManager).loadScene();
+                break;
+            }
             case SceneType.MainScene:{
                 this.currentScene = this.diContainer.resolve<MainSceneManager>("MainSceneManager");
                 (this.currentScene as MainSceneManager).loadScene();

@@ -69,8 +69,6 @@ export default class Game {
     protected async init() {
 
         registerAssets();
-        await AssetsLoader.loadAll();
-        await WordsModel.loadWordData()
 
         const container = document.querySelector('#game-container') as HTMLElement;
 

@@ -5,9 +5,11 @@ import {AceOfShadowsScreenManager} from "./components/aceOfShadowsScreen/AceOfSh
 import {MagicWordsScreenManager} from "./components/magicWordsScreen/MagicWordsScreenManager";
 import {PhoenixFlameScreenManager} from "./components/phoenixFlameScreen/PhoenixFlameScreenManager";
 import {GuessCardGameScreenManager} from "./components/guessCardGameScreen/GuessCardGameScreenManager";
+import {LoadingSceneManager} from "./components/loadScreen/LoadingSceneManager";
 
 export class SceneInstaller extends Installer {
     install(): void {
+        this.container.bind("LoadingSceneManager", new LoadingSceneManager(this.app));
         this.container.bind("MainSceneManager", new MainSceneManager(this.app));
         this.container.bind("AceOfShadowsScreenManager", new AceOfShadowsScreenManager(this.app));
         this.container.bind("MagicWordsScreenManager", new MagicWordsScreenManager(this.app));

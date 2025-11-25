@@ -53,7 +53,7 @@ export default new class GlobalDispatcher {
     }
 
     public remove($event: string, $callback: Function) {
-        this.listeners[$event] = this.listeners[$event].filter((listener) => {
+        this.listeners[$event] = this.listeners[$event]?.filter((listener) => {
             return !(
                 listener.event === $event &&
                 listener.callback === $callback

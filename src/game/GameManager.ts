@@ -10,7 +10,8 @@ export class GameManager {
     }
 
     startGame() {
-        this.sceneManager.loadScene(SceneType.MainScene);
+        // this.sceneManager.loadScene(SceneType.MainScene);
+        this.sceneManager.loadScene(SceneType.LoadingScreen);
     }
 
     changeScene(key: SceneType) {
