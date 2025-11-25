@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run generate:assets && webpack serve --open",
+    "start": "npm run generate:assets && webpack serve",
     "generate:assets": "ts-node src/utilits/generateAssetsJson.ts",
     "build": "npm run generate:assets && webpack --mode production",
     "load:httpServer": "http-server ./dist"
